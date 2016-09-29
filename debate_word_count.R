@@ -69,8 +69,4 @@ barplot(d.hillary[1:10,]$freq, las = 2, names.arg = d.hillary[1:10,]$word,
         ylab = "Word frequencies")
 
 #hillary word count 5085
-# Donal 8340
-hillary.words.count= rowSums(as.matrix(dtm.hillary))
-donal.words.count=rowSums(as.matrix(dtm.donal))
-donal.words.count
-hillary.words.count
+# Donal word count 8340
