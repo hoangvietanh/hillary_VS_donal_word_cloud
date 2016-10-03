@@ -1,8 +1,9 @@
 # install.packages("tm")
 # install.packages("SnowballC")
 # install.packages("wordcloud")
-install.packages("RColorBrewer")
+# install.packages("RColorBrewer")
 
+# load library
 library(tm)
 library(SnowballC)
 library(wordcloud)
@@ -16,7 +17,7 @@ donal = readLines(donalpath)
 hillary =readLines(hillarypatch)
 
 #donal from here
-#clean data
+#clean data, word to lower case, remove puntuation, remove stop words, remove whitespace, stem document
 donal <- Corpus(VectorSource(donal))
 donal <- tm_map(donal, PlainTextDocument)
 donal <- tm_map(donal, content_transformer(tolower))
