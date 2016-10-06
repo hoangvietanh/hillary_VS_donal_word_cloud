@@ -70,4 +70,8 @@ barplot(d.hillary[1:10,]$freq, las = 2, names.arg = d.hillary[1:10,]$word,
         ylab = "Word frequencies")
 
 #hillary word count 5085
-# Donal word count 8340
+# Donal 8340
+
+#count unique words
+length(findFreqTerms(dtm.donal,low = 1))
+length(findFreqTerms(dtm.hillary,low = 1))
